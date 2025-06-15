@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Introduction() {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen hidden sm:block">
       <div className="w-1/2 px-32 py-30 gap-y-4 flex flex-col text-xl text-gray-800">
         <h1 className="font-['Limelight'] text-2xl">Hallo, ich bin Liza.</h1>
         <p>
