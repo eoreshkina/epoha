@@ -4,7 +4,12 @@ export default function OrderPage() {
   return (
     <div className="min-h-screen flex items-center">
       <div className="rounded-2xl inline-block shadow-lg text-center max-w-3xl mx-auto my-8 ">
-        <div className="w-full bg-gray-400 rounded-t-2xl p-4 bg-gradient-to-r from-purple-900 to-pink-500">
+        <div
+          className="w-full bg-gray-400 rounded-t-2xl p-4"
+          style={{
+            backgroundImage: "linear-gradient(to right, #4a59e4, #ec4899)",
+          }}
+        >
           <h1 className="text-4xl font-['Limelight'] text-white mb-6 flex items-center justify-center gap-2 pt-4">
             Bestellungen
           </h1>

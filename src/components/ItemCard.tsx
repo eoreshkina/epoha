@@ -21,7 +21,5 @@ export default function ItemCard({ image, title }: ItemCardProps) {
         <span className="px-4 text-center">{title}</span>
       </div>
     </div>
-    /* <div className="border rounded-lg overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition-transform">
-        </div> */
   );
 }
