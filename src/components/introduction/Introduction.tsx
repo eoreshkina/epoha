@@ -28,7 +28,9 @@ export default function Introduction() {
         <div className="py-1" />
         <p>Wenn du etwas bestellen möchtest, drück einfach hier:</p>
         <button className="w-fit px-12 py-1 bg-black text-white rounded-lg cursor-pointer">
-          Bestellen
+          <a href="/order" className="text-white">
+            Bestellen
+          </a>
         </button>
       </div>
       <div className="w-1/2 absolute top-0 right-0 h-full -z-10">

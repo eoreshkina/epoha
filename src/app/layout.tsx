@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Limelight, Montserrat } from "next/font/google";
 import "@/styles/globals.css";
+import MobileHeader from "@/components/header/MobileHeader";
+import DesktopHeader from "@/components/header/DesktopHeader";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,10 +35,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
+      <Head>
+        <title>Art Portfolio</title>
+        <meta name="description" content="Custom art and design projects" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body
         className={`${geistSans.variable} ${limelight.variable} ${montserrat.variable} antialiased`}
       >
+        <MobileHeader />
+        <DesktopHeader />
         {children}
       </body>
     </html>

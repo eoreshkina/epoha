@@ -27,7 +27,9 @@ export default function MobileIntroduction() {
         Wenn du etwas bestellen möchtest, drück einfach hier:
       </p>
       <button className="w-fit px-12 py-1 bg-black text-white rounded-lg cursor-pointer mb-8">
-        Bestellen
+        <a href="/order" className="text-white">
+          Bestellen
+        </a>
       </button>
       <div className="w-full">
         <Image
