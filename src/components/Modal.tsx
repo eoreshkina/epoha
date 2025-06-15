@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Modal({
   images,
@@ -39,9 +40,11 @@ export default function Modal({
           <ChevronLeft size={32} />
         </button>
 
-        <img
+        <Image
           src={images[currentIndex]}
           alt={`Gallery ${currentIndex + 1}`}
+          width={500}
+          height={500}
           className="max-h-[80vh] object-contain rounded-lg"
         />
 

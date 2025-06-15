@@ -1,6 +1,7 @@
 import Collections from "@/components/Collections";
 import Introduction from "@/components/introduction/Introduction";
 import MobileIntroduction from "@/components/introduction/MobileIntroduction";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,12 +16,9 @@ export default function Home() {
           </h1>
         </div>
         <Collections />
-
-        <p className="mt-16 text-gray-800 text-center text-sm md:text-base max-w-md">
-          Custom-made art pieces and products created with passion and
-          imagination
-        </p>
       </main>
+
+      <Footer />
     </div>
   );
 }

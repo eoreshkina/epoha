@@ -80,8 +80,8 @@ export default function CollectionDetail() {
                 <div
                   className={`absolute top-5 right-5 text-white text-sm font-bold px-3 py-1 rounded ${
                     item.status === "Ausverkauft"
-                      ? "bg-red-600"
-                      : "bg-green-600"
+                      ? "bg-purple-900"
+                      : "bg-blue-700"
                   }`}
                 >
                   {item.status === "Ausverkauft" ? "Ausverkauft" : "Verfügbar"}

@@ -7,7 +7,7 @@ export default function DesktopHeader() {
         <h1
           className="text-3xl font-['Limelight'] mb-2 sm:mb-0 pl-8 bg-clip-text text-transparent"
           style={{
-            backgroundImage: "linear-gradient(to right, #4a59e4, #ec4899)", // pink-500 is #ec4899
+            backgroundImage: "linear-gradient(to right, #4a59e4, #ec4899)",
           }}
         >
           <Link legacyBehavior={true} href="/" passHref>
@@ -31,8 +31,12 @@ export default function DesktopHeader() {
           >
             <a className="hover:text-indigo-700 transition-colors">Instagram</a>
           </Link>
-          <Link legacyBehavior={true} href="/contact" passHref>
-            <a className="hover:text-gray-500 transition-colors">Kontakt</a>
+          <Link
+            legacyBehavior={true}
+            href="https://epohastudio.etsy.com"
+            passHref
+          >
+            <a className="hover:text-green-800 transition-colors">Shop</a>
           </Link>
         </nav>
       </div>
