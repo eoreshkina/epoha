@@ -6,7 +6,7 @@ const collections: Collection[] = [
   {
     title: "Tables",
     slug: "tables",
-    coverImage: "/images/tables/cover.png"
+    coverImage: "/images/tables/cover.png",
   },
   /* {
     title: "Mirror",
