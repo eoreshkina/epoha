@@ -12,14 +12,12 @@ const collections: Collection[] = [
     title: "Mirror",
     slug: "mirror",
     coverImage: "/images/mirror/cover.jpg",
-    images: ["/images/mirror/1.jpg", "/images/mirror/2.jpg"],
   },
   {
     title: "Clocks",
     slug: "clocks",
     coverImage: "/images/clocks/cover.jpg",
-    images: ["/images/clocks/1.jpg", "/images/clocks/2.jpg"],
-  }, */
+  },*/
 ];
 
 export default function Collections() {

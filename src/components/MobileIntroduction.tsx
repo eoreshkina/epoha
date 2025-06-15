@@ -23,7 +23,9 @@ export default function MobileIntroduction() {
         <li>Uhren</li>
         <li>Dekorationsobjekte</li>
       </ul>
-      <p className="mb-4">Wenn du etwas bestellen möchtest, drück einfach hier:</p>
+      <p className="mb-4">
+        Wenn du etwas bestellen möchtest, drück einfach hier:
+      </p>
       <button className="w-fit px-12 py-1 bg-black text-white rounded-lg cursor-pointer mb-8">
         Bestellen
       </button>
