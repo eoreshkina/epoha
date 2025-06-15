@@ -5,7 +5,9 @@ export default function DesktopHeader() {
     <header className="w-full p-4 relative bg-white/10 hidden sm:block">
       <div className="flex flex-col sm:flex-row items-center justify-between">
         <h1 className="text-3xl font-['Limelight'] mb-2 sm:mb-0 pl-8 bg-gradient-to-r from-purple-900 to-pink-500 bg-clip-text text-transparent">
-          EpoHa Studio
+          <Link legacyBehavior={true} href="/" passHref>
+            EpoHa Studio
+          </Link>
         </h1>
         <nav className="flex flex-col sm:flex-row gap-2 sm:gap-5 font-['Limelight'] text-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
           <Link
@@ -13,7 +15,7 @@ export default function DesktopHeader() {
             href="https://epohastudio.etsy.com"
             passHref
           >
-            <a className="hover:text-amber-300 transition-colors">Shop</a>
+            <a className="hover:text-amber-600 transition-colors">Shop</a>
           </Link>
           <Link legacyBehavior={true} href="/collection" passHref>
             <a className="hover:text-purple-500 transition-colors">

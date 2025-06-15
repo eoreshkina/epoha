@@ -34,3 +34,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Beispiel: Nummerierte Liste
+
+1. Welche Größe soll dein Kunstwerk haben?
+2. Welche Farben wünschst du dir?
+3. Welche Füllung soll dein Kunstwerk haben? (z. B. Blumen, Holz, eine Miniatur-Szene oder etwas anderes)
+4. Hast du schon eine Idee für das Tischgestell? Wenn ja, teile mir gern mehr dazu mit.

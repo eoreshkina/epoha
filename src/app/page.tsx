@@ -9,9 +9,14 @@ export default function Home() {
       <MobileIntroduction />
 
       <main className="flex flex-col items-center justify-center min-h-screen px-4 relative z-10">
+        <div className="w-full relative bg-cover bg-center bg-no-repeat">
+          <h1 className="text-5xl font-['Limelight'] text-gray-800 mb-6 flex justify-left gap-2 px-32">
+            Collection
+          </h1>
+        </div>
         <Collections />
 
-        <p className="mt-16 text-white text-center text-sm md:text-base max-w-md">
+        <p className="mt-16 text-gray-800 text-center text-sm md:text-base max-w-md">
           Custom-made art pieces and products created with passion and
           imagination
         </p>

@@ -8,7 +8,9 @@ export default function MobileHeader() {
   return (
     <header className="flex items-center justify-between w-full p-4 bg-white/10 sm:hidden relative z-20">
       <h1 className="text-2xl font-['Limelight'] bg-gradient-to-r from-purple-900 to-pink-500 bg-clip-text text-transparent">
-        EpoHa Studio
+        <Link legacyBehavior={true} href="/" passHref>
+          EpoHa Studio
+        </Link>
       </h1>
       <button
         className="flex flex-col justify-center items-center w-8 h-8 focus:outline-none"
