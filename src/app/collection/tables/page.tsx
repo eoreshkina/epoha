@@ -11,12 +11,12 @@ const tables = {
   images: [
     {
       images: ["/images/tables/igel-1.png", "/images/tables/igel-2.png"],
-      price: 450,
+      price: 500,
       status: "Verfügbar",
     },
     {
       images: ["/images/tables/green-1.png", "/images/tables/green-2.png"],
-      price: 200,
+      price: 250,
       status: "Verfügbar",
     },
     {
@@ -24,18 +24,18 @@ const tables = {
         "/images/tables/rosenpracht-1.png",
         "/images/tables/rosenpracht-2.png",
       ],
-      price: 200,
+      price: 250,
       status: "Ausverkauft",
     },
     {
       images: ["/images/tables/wald-1.png", "/images/tables/wald-2.png"],
-      price: 250,
+      price: 300,
       status: "Verfügbar",
     },
     { images: ["/images/tables/white.png"], price: 190, status: "Ausverkauft" },
     {
       images: ["/images/tables/pusteblume.png"],
-      price: 150,
+      price: 180,
       status: "Verfügbar",
     },
   ],
