@@ -13,11 +13,13 @@ const tables = {
       images: ["/images/tables/igel-1.png", "/images/tables/igel-2.png"],
       price: 500,
       status: "Verfügbar",
+      link: ""
     },
     {
       images: ["/images/tables/green-1.png", "/images/tables/green-2.png"],
       price: 250,
       status: "Verfügbar",
+      link: ""
     },
     {
       images: [
@@ -26,17 +28,20 @@ const tables = {
       ],
       price: 250,
       status: "Ausverkauft",
+      link: ""
     },
     {
       images: ["/images/tables/wald-1.png", "/images/tables/wald-2.png"],
       price: 300,
       status: "Verfügbar",
+      link: "https://epohastudio.etsy.com/listing/4337996500"
     },
     { images: ["/images/tables/white.png"], price: 190, status: "Ausverkauft" },
     {
       images: ["/images/tables/pusteblume.png"],
       price: 180,
       status: "Verfügbar",
+      link: ""
     },
   ],
 };
@@ -91,7 +96,7 @@ export default function CollectionDetail() {
 
             {/* Button under the image */}
             <div className="mt-4 self-start">
-              <Link legacyBehavior href="https://epohastudio.etsy.com">
+              <Link legacyBehavior href={item.link || "https://www.etsy.com/shop/epohastudio/?etsrc=sdt"}>
                 <a
                   className={`inline-block px-6 py-2 rounded-lg transition
                         ${
