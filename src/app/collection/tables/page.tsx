@@ -13,13 +13,13 @@ const tables = {
       images: ["/images/tables/igel-1.png", "/images/tables/igel-2.png"],
       price: 500,
       status: "Verfügbar",
-      link: ""
+      link: "https://epohastudio.etsy.com/listing/4338411073"
     },
     {
       images: ["/images/tables/green-1.png", "/images/tables/green-2.png"],
       price: 250,
       status: "Verfügbar",
-      link: ""
+      link: "https://epohastudio.etsy.com/listing/4338405614"
     },
     {
       images: [
@@ -42,6 +42,12 @@ const tables = {
       price: 180,
       status: "Verfügbar",
       link: ""
+    },
+{
+      images: ["/images/tables/bottles-1.png", "/images/tables/bottles-2.png", "/images/tables/bottles-3.png" ],
+      price: 300,
+      status: "Verfügbar",
+      link: "https://epohastudio.etsy.com/listing/4338405255"
     },
   ],
 };
