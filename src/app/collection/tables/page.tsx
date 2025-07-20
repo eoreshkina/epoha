@@ -102,21 +102,30 @@ export default function CollectionDetail() {
 
             {/* Button under the image */}
             <div className="mt-4 self-start">
-              <Link legacyBehavior href={item.link || "https://www.etsy.com/shop/epohastudio/?etsrc=sdt"}>
-                <a
-                  className={`inline-block px-6 py-2 rounded-lg transition
-                        ${
-                          item.status === "Ausverkauft"
-                            ? "bg-gray-400 cursor-not-allowed pointer-events-none"
-                            : "bg-black text-white hover:bg-[#4a59e4]"
-                        }
-                      `}
+              {item.status === "Ausverkauft" ? (
+                <Link
+                  legacyBehavior
+                  href={`https://wa.me/4915901756444`}
                 >
-                  {item.status === "Ausverkauft"
-                    ? "Nicht verfügbar"
-                    : "Shop Now"}
-                </a>
-              </Link>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 rounded-lg bg-purple-800 text-white hover:bg-[#ec4899] transition"
+                  >
+                    Auf Nachfrage
+                  </a>
+                </Link>
+              ) : (
+                <Link legacyBehavior href={item.link || "https://www.etsy.com/shop/epohastudio"}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 rounded-lg bg-black text-white hover:bg-[#4a59e4] transition"
+                  >
+                    Shop Now
+                  </a>
+                </Link>
+              )}
             </div>
           </div>
         ))}
