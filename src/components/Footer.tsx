@@ -3,7 +3,7 @@ export default function Footer() {
     <footer
       className="w-full text-gray-200 py-2 mt-12"
       style={{
-        backgroundImage: "linear-gradient(to right, #4a59e4, #ec4899)",
+        backgroundImage: "linear-gradient(to right, #453377, #D9A5B3)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">

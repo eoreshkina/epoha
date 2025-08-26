@@ -77,22 +77,15 @@ export default function CollectionDetail() {
                 height={500}
                 className="object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
               />
-              <div
-                className="absolute bottom-5 left-5 bg-black text-white text-lg font-semibold px-3 py-1 rounded"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to right, #4a59e4, #ec4899)",
-                }}
-              >
-                €{item.price}
-              </div>
+
+
 
               {item.status && (
                 <div
-                  className={`absolute top-5 right-5 text-white text-sm font-bold px-3 py-1 rounded ${
+                  className={`absolute top-5 right-5 text-black text-sm font-bold px-3 py-1 rounded ${
                     item.status === "Ausverkauft"
-                      ? "bg-purple-900"
-                      : "bg-blue-700"
+                      ? "bg-[#F7F2BC]"
+                      : "bg-[#D0BBEA]"
                   }`}
                 >
                   {item.status === "Ausverkauft" ? "Ausverkauft" : "Verfügbar"}
@@ -100,17 +93,22 @@ export default function CollectionDetail() {
               )}
             </div>
 
-            {/* Button under the image */}
-            <div className="mt-4 self-start">
+
+
+            {/* Price + Button under the image */}
+            <div className="mt-4 flex items-center justify-between w-full">
+              {/* Price on the left */}
+              <div className="text-lg font-semibold text-black">
+                €{item.price}
+              </div>
+
+              {/* Button on the right */}
               {item.status === "Ausverkauft" ? (
-                <Link
-                  legacyBehavior
-                  href={`https://wa.me/4915901756444`}
-                >
+                <Link legacyBehavior href={`https://wa.me/4915901756444`}>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-6 py-2 rounded-lg bg-purple-800 text-white hover:bg-[#ec4899] transition"
+                    className="px-6 py-2 rounded-lg bg-[#453377] text-white hover:bg-[#D9A5B3] transition"
                   >
                     Auf Nachfrage
                   </a>
@@ -120,13 +118,14 @@ export default function CollectionDetail() {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-6 py-2 rounded-lg bg-black text-white hover:bg-[#4a59e4] transition"
+                    className="px-6 py-2 rounded-lg bg-[#333333] text-white hover:bg-[#4a59e4] transition"
                   >
                     Shop Now
                   </a>
                 </Link>
               )}
             </div>
+
           </div>
         ))}
       </div>
