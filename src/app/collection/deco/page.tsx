@@ -23,6 +23,14 @@ export default function CollectionDetail() {
   return (
     <section className="py-12 px-4">
       <h2 className="text-4xl font-bold mb-8 text-center">{deco.title}</h2>
+
+      {/* Beschreibung */}
+            <p className="max-w-3xl mx-auto text-left text-gray-700 mb-10">
+              Halte deine besonderen Momente in einem einzigartigen Memory Frame aus Epoxidharz fest. <br />
+              <ul>🌸 Dein Hochzeitsstrauß</ul>
+               <ul>🎂 Blumen von einem Geburtstag</ul>
+               <ul>💫 kleine Erinnerungsstücke, die dir am Herzen liegen</ul>
+            </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {deco.images.map((item, index) => (
           <div
