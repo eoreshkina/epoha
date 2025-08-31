@@ -24,6 +24,10 @@ export default function DesktopHeader() {
             <a className="hover:text-amber-600 transition-colors">Bestellen</a>
           </Link>
 
+           <Link legacyBehavior={true} href="/workshop" passHref>
+              <a className="hover:text-pink-600 transition-colors">Workshops</a>
+           </Link>
+
           <Link
             legacyBehavior={true}
             href="https://www.instagram.com/epoha.studio?igsh=dDRocDh1M2xidHg0&utm_source=qr"

@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import MobileHeader from "@/components/header/MobileHeader";
 import DesktopHeader from "@/components/header/DesktopHeader";
 import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,12 +36,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
-      <Head>
-        <title>Art Portfolio</title>
-        <meta name="description" content="Custom art and design projects" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+     <html lang="en">
+          <head>
+            {/* Google Tag Manager */}
+            <Script
+              strategy="afterInteractive"
+              src="https://www.googletagmanager.com/gtag/js?id=G-VR9NBQSQG7"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-VR9NBQSQG7');
+              `}
+            </Script>
+          </head>
       <body
         className={`${geistSans.variable} ${limelight.variable} ${montserrat.variable} antialiased`}
       >
