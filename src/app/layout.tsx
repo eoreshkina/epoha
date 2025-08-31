@@ -3,7 +3,6 @@ import { Geist, Limelight, Montserrat } from "next/font/google";
 import "@/styles/globals.css";
 import MobileHeader from "@/components/header/MobileHeader";
 import DesktopHeader from "@/components/header/DesktopHeader";
-import Head from "next/head";
 import Script from "next/script";
 
 const geistSans = Geist({
