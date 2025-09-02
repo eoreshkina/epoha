@@ -15,7 +15,7 @@ export default function Footer() {
           imagination
         </p>
         <div className="flex space-x-4 mt-4 sm:mt-0">
-          <a href="" className="hover:underline">
+          <a href="/impressum" className="hover:underline">
             Impressum
           </a>
           <a href="/datenschutz" className="hover:underline">

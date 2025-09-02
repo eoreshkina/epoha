@@ -16,7 +16,7 @@ export default function DesktopHeader() {
         </h1>
         <nav className="flex flex-col sm:flex-row gap-2 sm:gap-5 font-['Limelight'] text-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
           <Link legacyBehavior={true} href="/collection" passHref>
-            <a className="hover:text-purple-500 transition-colors">
+            <a className="hover:text-[#453377] transition-colors">
               Collection
             </a>
           </Link>
@@ -24,8 +24,8 @@ export default function DesktopHeader() {
             <a className="hover:text-amber-600 transition-colors">Bestellen</a>
           </Link>
 
-           <Link legacyBehavior={true} href="/workshop" passHref>
-              <a className="hover:text-pink-600 transition-colors">Workshops</a>
+           <Link legacyBehavior={true} href="/workshops" passHref>
+              <a className="hover:text-[#D9A5B3] transition-colors">Workshops</a>
            </Link>
 
           <Link

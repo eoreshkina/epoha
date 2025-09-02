@@ -5,7 +5,7 @@ export default function DatenschutzPage() {
         <div
           className="w-full bg-gray-400 rounded-t-2xl p-4"
           style={{
-            backgroundImage: "linear-gradient(to right, #4a59e4, #ec4899)",
+            backgroundImage: "linear-gradient(to right, #453377, #D9A5B3)",
           }}
         >
           <h1 className="text-4xl font-['Limelight'] text-white mb-6 flex items-center justify-center gap-2 pt-4">
