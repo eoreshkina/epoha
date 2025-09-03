@@ -13,6 +13,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.6",
     "@tailwindcss/vite": "^4.1.6",
+    "framer-motion": "^12.23.12",
     "lucide-react": "^0.509.0",
     "next": "15.2.2",
     "react": "^19.0.0",
@@ -26,7 +27,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9.26.0",
     "eslint-config-next": "15.3.2",
-    "typescript": "^5",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "typescript": "^5"
   }
 }

@@ -53,6 +53,8 @@ export default function ImpressumPage() {
              </section>
            </div>
          </div>
+
        </div>
+
      );
 };
