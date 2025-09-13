@@ -57,9 +57,10 @@ export default function MobileHeader() {
             </a>
           </Link>
 
-           <Link legacyBehavior={true} href="/workshop" passHref>
-              <a className="hover:text-[#D9A5B3] transition-colors">Workshops</a>
+           <Link legacyBehavior={true} href="/workshops" passHref>
+               <a className="hover:text-[#D9A5B3] transition-colors">Workshops</a>
            </Link>
+
           <Link
             legacyBehavior={true}
             href="https://www.instagram.com/epoha.studio?igsh=dDRocDh1M2xidHg0&utm_source=qr"
