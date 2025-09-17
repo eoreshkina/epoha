@@ -85,7 +85,6 @@ export default function MobileWorkshops() {
         {/* Content */}
         <div className="py-10 px-8 flex justify-center">
           <AnimatePresence initial={false} custom={direction} mode="wait">
-          <div className="relative w-full max-w-5xl">
             <motion.div
               key={index}
               custom={direction}
@@ -131,7 +130,6 @@ export default function MobileWorkshops() {
                 />
               </div>
             </motion.div>
-            </div>
           </AnimatePresence>
         </div>
 

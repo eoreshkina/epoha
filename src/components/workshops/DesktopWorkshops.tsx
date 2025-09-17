@@ -85,7 +85,6 @@ export default function DesktopWorkshops() {
         {/* Content */}
         <div className="py-10 px-8 flex justify-center">
           <AnimatePresence initial={false} custom={direction} mode="wait">
-          <div className="relative w-full max-w-5xl">
             <motion.div
               key={index}
               custom={direction}
@@ -131,7 +130,7 @@ export default function DesktopWorkshops() {
                 <p className="font-semibold">{workshops[index].duration}</p>
               </div>
             </motion.div>
-
+     </AnimatePresence>
         </div>
 
         {/* Controls */}
@@ -148,8 +147,7 @@ export default function DesktopWorkshops() {
           ▶
         </button>
       </div>
-     </AnimatePresence>
-    </div>
+
      </div>
   );
 }
