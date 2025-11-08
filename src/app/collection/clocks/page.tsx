@@ -20,6 +20,12 @@ const clocks = {
       price: 200,
       status: "Ausverkauft",
       link: "https://epohastudio.etsy.com/listing/4338411073"
+    },
+    {
+      images: ["/images/clocks/bee1.png", "/images/clocks/bee2.png", "/images/clocks/bee3.png"],
+      price: 150,
+      status: "Verfügbar",
+      link: "https://epohastudio.etsy.com/de-en/listing/4390033626"
     }
   ],
 };

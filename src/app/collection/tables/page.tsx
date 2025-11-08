@@ -43,11 +43,17 @@ const tables = {
       status: "Verfügbar",
       link: ""
     },
-{
+    {
       images: ["/images/tables/bottles-1.png", "/images/tables/bottles-2.png", "/images/tables/bottles-3.png" ],
       price: 300,
       status: "Verfügbar",
       link: "https://epohastudio.etsy.com/listing/4338405255"
+    },
+    {
+      images: ["/images/tables/herbst1.png", "/images/tables/herbst2.png", "/images/tables/herbst3.png" ],
+      price: 350,
+      status: "Ausverkauft",
+      link: ""
     },
   ],
 };
