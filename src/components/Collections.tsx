@@ -19,10 +19,10 @@ const collections: Collection[] = [
     coverImage: "/images/clocks/black1.png",
   },
   {
-      title: "Memory Frames",
-      slug: "deco",
-      coverImage: "/images/deco/cover.png",
-    },
+    title: "Memory Frames",
+    slug: "deco",
+    coverImage: "/images/deco/cover.png",
+  },
 ];
 
 export default function Collections() {
