@@ -140,6 +140,8 @@ export default function MobileWorkshops() {
                 <Image
                   src={workshops[index].image}
                   alt={workshops[index].title}
+                  width={500}
+                  height={500}
                   className="w-full max-w-xs md:max-w-full object-cover rounded-lg shadow"
                 />
               </div>

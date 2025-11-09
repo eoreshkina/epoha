@@ -14,7 +14,7 @@ const workshops = [
       "Du legst alles unter meine Anleitung in den Tisch ein, wir übergießen alles – und nach 2 Wochen kannst du dein fertiges Unikat abholen.",
     duration:
       "⏱ Dauer: 1,5–2 Stunden – ein intensives Erlebnis voller Kreativität!",
-    image: "/images/workshops/rosenpracht.png",
+    image: "/images/workshops/rosenpracht.jpg",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const workshops = [
       "Über mehrere Treffen begleite ich dich durch den gesamten Prozess – vom ersten Entwurf bis zum letzten Schliff. Du lernst nicht nur das Handwerk kennen, sondern erschaffst etwas, das dich viele Jahre begleitet..",
     duration:
       "⏱ Dauer: 6 Termine – ein kreativer Prozess, der dich mit Stolz erfüllt.",
-    image: "/images/workshops/wald.png",
+    image: "/images/workshops/wald.jpg",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const workshops = [
       "Du bringst deine Blumen oder Erinnerungsstücke mit, und gestaltest dein Bild ganz nach deinem Gefühl. Nach ca. 2 Wochen kannst du dein fertiges Kunstwerk abholen.",
     duration:
       "⏱ Dauer: 1,5–2 Stunden – ein kreatives Erlebnis voller Emotionen",
-    image: "/images/workshops/memoryframe.png",
+    image: "/images/workshops/memoryframe.jpg",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const workshops = [
     process:
       "Ideal zum Einstieg oder als besonderes Geschenk. Kreativität, Handwerk und Persönlichkeit in einem kleinen, feinen Projekt.",
     duration: " ⏱ Dauer: ca. 1.5 Stunden – schnell, einfach und voller Spaß!",
-    image: "/images/workshops/coasters.png",
+    image: "/images/workshops/coasters.jpg",
   },
 ];
 
@@ -115,6 +115,8 @@ export default function DesktopWorkshops() {
                 <Image
                   src={workshops[index].image}
                   alt={workshops[index].title}
+                  width={500}
+                  height={500}
                   className="w-full h-135 object-cover rounded-lg shadow"
                 />
               </div>
