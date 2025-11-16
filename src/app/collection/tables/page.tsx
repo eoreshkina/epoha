@@ -13,13 +13,13 @@ const tables = {
       images: ["/images/tables/igel-1.png", "/images/tables/igel-2.png"],
       price: 500,
       status: "Verfügbar",
-      link: "https://epohastudio.etsy.com/listing/4338411073"
+      link: "https://epohastudio.etsy.com/listing/4338411073",
     },
     {
       images: ["/images/tables/green-1.png", "/images/tables/green-2.png"],
       price: 250,
       status: "Verfügbar",
-      link: "https://epohastudio.etsy.com/listing/4338405614"
+      link: "https://epohastudio.etsy.com/listing/4338405614",
     },
     {
       images: [
@@ -28,32 +28,40 @@ const tables = {
       ],
       price: 250,
       status: "Ausverkauft",
-      link: ""
+      link: "",
     },
     {
       images: ["/images/tables/wald-1.png", "/images/tables/wald-2.png"],
       price: 300,
       status: "Verfügbar",
-      link: "https://epohastudio.etsy.com/listing/4337996500"
+      link: "https://epohastudio.etsy.com/listing/4337996500",
     },
     { images: ["/images/tables/white.png"], price: 190, status: "Ausverkauft" },
     {
       images: ["/images/tables/pusteblume.png"],
       price: 180,
       status: "Verfügbar",
-      link: ""
+      link: "",
     },
     {
-      images: ["/images/tables/bottles-1.png", "/images/tables/bottles-2.png", "/images/tables/bottles-3.png" ],
+      images: [
+        "/images/tables/bottles-1.png",
+        "/images/tables/bottles-2.png",
+        "/images/tables/bottles-3.png",
+      ],
       price: 300,
       status: "Verfügbar",
-      link: "https://epohastudio.etsy.com/listing/4338405255"
+      link: "https://epohastudio.etsy.com/listing/4338405255",
     },
     {
-      images: ["/images/tables/herbst1.png", "/images/tables/herbst2.png", "/images/tables/herbst3.png" ],
+      images: [
+        "/images/tables/herbst1.png",
+        "/images/tables/herbst2.png",
+        "/images/tables/herbst3.png",
+      ],
       price: 350,
       status: "Ausverkauft",
-      link: ""
+      link: "",
     },
   ],
 };
@@ -117,7 +125,10 @@ export default function CollectionDetail() {
                   </a>
                 </Link>
               ) : (
-                <Link legacyBehavior href={item.link || "https://www.etsy.com/shop/epohastudio"}>
+                <Link
+                  legacyBehavior
+                  href={item.link || "https://www.etsy.com/shop/epohastudio"}
+                >
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -128,7 +139,6 @@ export default function CollectionDetail() {
                 </Link>
               )}
             </div>
-
           </div>
         ))}
       </div>

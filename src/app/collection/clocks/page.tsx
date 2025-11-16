@@ -13,20 +13,28 @@ const clocks = {
       images: ["/images/clocks/black1.png", "/images/clocks/black2.png"],
       price: 200,
       status: "Ausverkauft",
-      link: "https://epohastudio.etsy.com/listing/4338411073"
+      link: "https://epohastudio.etsy.com/listing/4338411073",
     },
     {
-      images: ["/images/clocks/green1.png", "/images/clocks/green2.png", "/images/clocks/green3.png"],
+      images: [
+        "/images/clocks/green1.png",
+        "/images/clocks/green2.png",
+        "/images/clocks/green3.png",
+      ],
       price: 200,
       status: "Ausverkauft",
-      link: "https://epohastudio.etsy.com/listing/4338411073"
+      link: "https://epohastudio.etsy.com/listing/4338411073",
     },
     {
-      images: ["/images/clocks/bee1.png", "/images/clocks/bee2.png", "/images/clocks/bee3.png"],
+      images: [
+        "/images/clocks/bee1.png",
+        "/images/clocks/bee2.png",
+        "/images/clocks/bee3.png",
+      ],
       price: 150,
       status: "Verfügbar",
-      link: "https://epohastudio.etsy.com/de-en/listing/4390033626"
-    }
+      link: "https://epohastudio.etsy.com/de-en/listing/4390033626",
+    },
   ],
 };
 
@@ -56,8 +64,6 @@ export default function CollectionDetail() {
                 className="object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
               />
 
-
-
               {item.status && (
                 <div
                   className={`absolute top-5 right-5 text-black text-sm font-bold px-3 py-1 rounded ${
@@ -70,8 +76,6 @@ export default function CollectionDetail() {
                 </div>
               )}
             </div>
-
-
 
             {/* Price + Button under the image */}
             <div className="mt-4 flex items-center justify-between w-full">
@@ -92,7 +96,10 @@ export default function CollectionDetail() {
                   </a>
                 </Link>
               ) : (
-                <Link legacyBehavior href={item.link || "https://www.etsy.com/shop/epohastudio"}>
+                <Link
+                  legacyBehavior
+                  href={item.link || "https://www.etsy.com/shop/epohastudio"}
+                >
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -103,7 +110,6 @@ export default function CollectionDetail() {
                 </Link>
               )}
             </div>
-
           </div>
         ))}
       </div>

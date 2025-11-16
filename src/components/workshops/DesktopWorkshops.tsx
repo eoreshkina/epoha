@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const workshops = [
   {
@@ -13,7 +14,7 @@ const workshops = [
       "Du legst alles unter meine Anleitung in den Tisch ein, wir übergießen alles – und nach 2 Wochen kannst du dein fertiges Unikat abholen.",
     duration:
       "⏱ Dauer: 1,5–2 Stunden – ein intensives Erlebnis voller Kreativität!",
-    image: "/images/workshops/rosenpracht.png",
+    image: "/images/workshops/rosenpracht.jpg",
   },
   {
     id: 2,
@@ -22,22 +23,24 @@ const workshops = [
       "Baue deinen Tisch komplett selbst – von der ersten Skizze bis zum letzten Schliff.",
     process:
       "Über mehrere Treffen begleite ich dich durch den gesamten Prozess – vom ersten Entwurf bis zum letzten Schliff. Du lernst nicht nur das Handwerk kennen, sondern erschaffst etwas, das dich viele Jahre begleitet..",
-    duration: "⏱ Dauer: 6 Termine – ein kreativer Prozess, der dich mit Stolz erfüllt.",
-    image: "/images/workshops/wald.png",
+    duration:
+      "⏱ Dauer: 6 Termine – ein kreativer Prozess, der dich mit Stolz erfüllt.",
+    image: "/images/workshops/wald.jpg",
   },
   {
     id: 3,
     title: "Momente festgehalten",
     description: "Bewahre deine Erinnerungen in einem einzigartigen Bild:",
     descriptionList: [
-          "🌸 Dein Hochzeitsstrauß",
-          "🎂 Geburtstagsblumen",
-          "💫 oder kleine Dinge, die dir etwas bedeuten",
-     ],
+      "🌸 Dein Hochzeitsstrauß",
+      "🎂 Geburtstagsblumen",
+      "💫 oder kleine Dinge, die dir etwas bedeuten",
+    ],
     process:
       "Du bringst deine Blumen oder Erinnerungsstücke mit, und gestaltest dein Bild ganz nach deinem Gefühl. Nach ca. 2 Wochen kannst du dein fertiges Kunstwerk abholen.",
-    duration: "⏱ Dauer: 1,5–2 Stunden – ein kreatives Erlebnis voller Emotionen",
-    image: "/images/workshops/memoryframe.png",
+    duration:
+      "⏱ Dauer: 1,5–2 Stunden – ein kreatives Erlebnis voller Emotionen",
+    image: "/images/workshops/memoryframe.jpg",
   },
   {
     id: 4,
@@ -47,7 +50,7 @@ const workshops = [
     process:
       "Ideal zum Einstieg oder als besonderes Geschenk. Kreativität, Handwerk und Persönlichkeit in einem kleinen, feinen Projekt.",
     duration: " ⏱ Dauer: ca. 1.5 Stunden – schnell, einfach und voller Spaß!",
-    image: "/images/workshops/coasters.png",
+    image: "/images/workshops/coasters.jpg",
   },
 ];
 
@@ -75,7 +78,9 @@ export default function DesktopWorkshops() {
         {/* Header */}
         <div
           className="w-full bg-gray-400 rounded-t-2xl p-4"
-          style={{ backgroundImage: "linear-gradient(to right, #453377, #D9A5B3)" }}
+          style={{
+            backgroundImage: "linear-gradient(to right, #453377, #D9A5B3)",
+          }}
         >
           <h1 className="text-4xl font-['Limelight'] text-white mb-4 flex items-center justify-center gap-2 pt-2">
             Workshops
@@ -92,7 +97,10 @@ export default function DesktopWorkshops() {
               initial="enter"
               animate="center"
               exit="exit"
-              transition={{ x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 } }}
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2 },
+              }}
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={1}
@@ -104,17 +112,23 @@ export default function DesktopWorkshops() {
             >
               {/* Image */}
               <div className="flex justify-center">
-                <img
+                <Image
                   src={workshops[index].image}
                   alt={workshops[index].title}
+                  width={500}
+                  height={500}
                   className="w-full h-135 object-cover rounded-lg shadow"
                 />
               </div>
 
               {/* Text */}
               <div className="flex flex-col">
-                <h2 className="text-3xl font-bold mb-4">{workshops[index].title}</h2>
-                <p className="text-gray-700 mb-2">{workshops[index].description}</p>
+                <h2 className="text-3xl font-bold mb-4">
+                  {workshops[index].title}
+                </h2>
+                <p className="text-gray-700 mb-2">
+                  {workshops[index].description}
+                </p>
 
                 {workshops[index].descriptionList && (
                   <ul className="list-disc list-inside space-y-1 mb-4">
@@ -124,13 +138,15 @@ export default function DesktopWorkshops() {
                   </ul>
                 )}
 
-                <h3 className="text-xl font-semibold mb-2">👉 So funktioniert’s:</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  👉 So funktioniert’s:
+                </h3>
                 <p className="mb-3">{workshops[index].process}</p>
 
                 <p className="font-semibold">{workshops[index].duration}</p>
               </div>
             </motion.div>
-     </AnimatePresence>
+          </AnimatePresence>
         </div>
 
         {/* Controls */}
@@ -147,7 +163,6 @@ export default function DesktopWorkshops() {
           ▶
         </button>
       </div>
-
-     </div>
+    </div>
   );
 }

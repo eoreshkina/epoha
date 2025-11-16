@@ -26,7 +26,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "EpoHa Studio",
-  description: "Custom-made art pieces and products created with passion and imagination",
+  description:
+    "Custom-made art pieces and products created with passion and imagination",
 };
 
 export default function RootLayout({
@@ -35,22 +36,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-     <html lang="en">
-          <head>
-            {/* Google Tag Manager */}
-            <Script
-              strategy="afterInteractive"
-              src="https://www.googletagmanager.com/gtag/js?id=G-VR9NBQSQG7"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
+    <html lang="en">
+      <head>
+        {/* Google Tag Manager */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-VR9NBQSQG7"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-VR9NBQSQG7');
               `}
-            </Script>
-          </head>
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${limelight.variable} ${montserrat.variable} antialiased`}
       >

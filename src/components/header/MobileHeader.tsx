@@ -57,9 +57,9 @@ export default function MobileHeader() {
             </a>
           </Link>
 
-           <Link legacyBehavior={true} href="/workshops" passHref>
-               <a className="hover:text-[#D9A5B3] transition-colors">Workshops</a>
-           </Link>
+          <Link legacyBehavior={true} href="/workshops" passHref>
+            <a className="hover:text-[#D9A5B3] transition-colors">Workshops</a>
+          </Link>
 
           <Link
             legacyBehavior={true}
