@@ -84,8 +84,6 @@ export default function CollectionDetail() {
                 className="object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
               />
 
-
-
               {item.status && (
                 <div
                   className={`absolute top-5 right-5 text-black text-sm font-bold px-3 py-1 rounded ${
@@ -98,7 +96,6 @@ export default function CollectionDetail() {
                 </div>
               )}
             </div>
-
 
 
             {/* Price + Button under the image */}

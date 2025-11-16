@@ -21,9 +21,9 @@ export default function Introduction() {
         <h1 className="font-bold">Was kannst du bei mir bestellen?</h1>
         <ul className="list-disc pl-5">
           <li>Tische</li>
-          <li>Tischplatten</li>
           <li>Uhren</li>
-          <li>Dekorationsobjekte</li>
+          <li>Spiegel</li>
+          <li>Bilder</li>
         </ul>
         <div className="py-1" />
         <p>Wenn du etwas bestellen möchtest, drück einfach hier:</p>

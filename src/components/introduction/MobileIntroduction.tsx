@@ -19,9 +19,9 @@ export default function MobileIntroduction() {
       <p className="font-bold mb-2">Was kannst du bei mir bestellen?</p>
       <ul className="list-disc pl-5 mb-4">
         <li>Tische</li>
-        <li>Tischplatten</li>
         <li>Uhren</li>
-        <li>Dekorationsobjekte</li>
+        <li>Spiegel</li>
+        <li>Bilder</li>
       </ul>
       <p className="mb-4">
         Wenn du etwas bestellen möchtest, drück einfach hier:
